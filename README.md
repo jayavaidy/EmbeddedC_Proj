@@ -4,18 +4,18 @@
 ## In Action
 
 ### LED Actuator ON when both switches are ON
-![ON][simulation/bothON.png]
+![ON](simulation/bothON.png)
 
 ### LED Actuator OFF when
 
 #### Both switches are OFF
 
-![OFF][simulation/bothOFF.png]
+![OFF](simulation/bothOFF.png)
 
 #### Either one of the switches are OFF
 
-![OFF1][simulation/sw1ON.png]
-![OFF2][simulation/sw2ON.png]
+![OFF1](simulation/sw1ON.png)
+![OFF2](simulation/sw2ON.png)
 
 #### CI and Code Quality
 
