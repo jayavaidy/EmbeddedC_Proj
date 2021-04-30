@@ -31,7 +31,7 @@
 ![CRO20](simulation/70CRO.png)
 ![RAM20](simulation/70RAM.png)
 
-##### 33&deg;C - 20% duty cycle
+##### 33&deg;C - 95% duty cycle
 ![CRO95](simulation/95CRO.png)
 ![RAM95](simulation/95RAM.png)
 
