@@ -19,21 +19,21 @@
 
 #### Different frequencies of PWM waves generated depending on the input received by the temperature sensor
 
-##### 20&degC - 20% duty cycle
+##### 20&deg;C - 20% duty cycle
 ![CRO20](simulation/20CRO.png)
 ![RAM20](simulation/20RAM.png)
 
-##### 25&degC - 40% duty cycle
+##### 25&deg;C - 40% duty cycle
 ![CRO40](simulation/40CRO.png)
 ![RAM40](simulation/40RAM.png)
 
-##### 29&degC - 70% duty cycle
+##### 29&deg;C - 70% duty cycle
 ![CRO20](simulation/70CRO.png)
 ![RAM20](simulation/70RAM.png)
 
-##### 33&degC - 20% duty cycle
-![CRO95](simulation/90CRO.png)
-![RAM95](simulation/90RAM.png)
+##### 33&deg;C - 20% duty cycle
+![CRO95](simulation/95CRO.png)
+![RAM95](simulation/95RAM.png)
 
 #### Serial Output that prints the current temperature values
 ![UARTOP](simulation/UARTOP.png)
