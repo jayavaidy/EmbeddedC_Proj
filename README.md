@@ -5,38 +5,38 @@
 ### LED Actuator that indicates the status of the heater and presence of the driver
 
 #### LED glows when both the heater is ON and the driver is seated
-![ON](simulation/bothON.png)
+![ON](src/simulation/bothON.png)
 
 #### LED doesn't glow when 
 
 ##### The heater is OFF and the driver is not seated
-![OFF](simulation/bothOFF.png)
+![OFF](src/simulation/bothOFF.png)
 
 ##### Either the heater is not ON or the driver is not present
 
-![OFF1](simulation/sw1ON.png)
-![OFF2](simulation/sw2ON.png)
+![OFF1](src/simulation/sw1ON.png)
+![OFF2](src/simulation/sw2ON.png)
 
 #### Different frequencies of PWM waves generated depending on the input received by the temperature sensor
 
 ##### 20&C - 20% duty cycle
-![CRO20](20CRO.png)
-![RAM20](20RAM.png)
+![CRO20](src/20CRO.png)
+![RAM20](src/20RAM.png)
 
 ##### 25&C - 40% duty cycle
-![CRO40](40CRO.png)
-![RAM40](40RAM.png)
+![CRO40](src/40CRO.png)
+![RAM40](src/40RAM.png)
 
 ##### 29&C - 70% duty cycle
-![CRO20](70CRO.png)
-![RAM20](70RAM.png)
+![CRO20](src/70CRO.png)
+![RAM20](src/70RAM.png)
 
 ##### 20&C - 20% duty cycle
-![CRO95](90CRO.png)
-![RAM95](90RAM.png)
+![CRO95](src/90CRO.png)
+![RAM95](src/90RAM.png)
 
 #### Serial Output that prints the current temperature values
-![UARTOP](UARTOP.png)
+![UARTOP](src/UARTOP.png)
 
 #### CI and Code Quality
 
