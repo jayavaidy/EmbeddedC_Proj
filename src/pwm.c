@@ -7,10 +7,10 @@ void initPWM()
     DDRB |= (1<<PB1);
 }
 
-int PWMGenerate(uint16_t temp)
+char PWMGenerate(uint16_t temp)
 {
-    int temperature;
-    if((temp>=0)&&(temp<200))
+    char temperature = 0;
+    if((temp>0)&&(temp<=200))
     {
         ///20% duty cycle
         OCR1A = 205;

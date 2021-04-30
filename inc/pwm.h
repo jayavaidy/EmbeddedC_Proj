@@ -26,6 +26,6 @@
  * @param[in] temperature get the temperature value from the ADC
  * @param[out] int prints the integer value of the temperature 
  */
-int PWMGenerate(uint16_t temp);
+char PWMGenerate(uint16_t temp);
 
 #endif

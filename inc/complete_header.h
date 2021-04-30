@@ -16,5 +16,6 @@
 #include "led.h"
 #include "adc.h"
 #include "pwm.h"
+#include "usart.h"
 
 #endif

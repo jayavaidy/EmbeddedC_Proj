@@ -6,7 +6,8 @@ BUILD_DIR = Build
 SRC = main.c\
 src/led.c\
 src/adc.c\
-src/pwm.c
+src/pwm.c\
+src/usart.c
 
 # All header file paths
 INC = -I inc

@@ -1,26 +1,33 @@
+
 #include "complete_header.h"
+
 
 int main(void)
 {
     initPort();
     initADC();
     initPWM();
+    initUSART(103);
 
     while(1)
     {
-        volatile int systemStaus, temperature;
-        uint16_t temp;
-        systemStaus = check();
+        int systemStatus;
+        systemStatus = check();
         
-        if(systemStaus)
+        if(systemStatus)
         {
+            char temperature;
+            uint16_t temp;
+
             temp = readADC(5);
             _delay_ms(200);
             temperature = PWMGenerate(temp);
+            _delay_ms(200);
+            transmitCharUSART(temperature);
         }
         else
         {
-            OCR1A =0;
+            OCR1A = 0;
         }
     }
 }
