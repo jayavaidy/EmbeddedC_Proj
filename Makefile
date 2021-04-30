@@ -1,9 +1,12 @@
-PROJ_NAME = ledActuator
+PROJ_NAME = carHeatingSystem
 
 BUILD_DIR = Build
 
 # All Source code files
-SRC = ledActuator.c\
+SRC = main.c\
+src/led.c\
+src/adc.c\
+src/pwm.c
 
 # All header file paths
 INC = -I inc
@@ -28,7 +31,7 @@ else #All configurations for Linux OS
 endif
 
 # Command to make to consider these names as targets and not as file names in folder
-.PHONY:all analysis clean doc
+.PHONY:all analysis clean doc elftohex
 
 all:$(BUILD_DIR)
 # Compile the code and generate the ELF file
@@ -37,6 +40,10 @@ all:$(BUILD_DIR)
 $(BUILD_DIR):
 # Create directory to store the built files
 	mkdir $(BUILD_DIR)
+
+elftohex: $(BUILD_DIR)/$(PROJ_NAME).elf
+# Creating a .hex file from a .elf file
+	$(AVR_OBJ_CPY) -O ihex $(BUILD_DIR)/$(PROJ_NAME).elf  $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).hex)
 
 analysis: $(SRC)
 # Analyse the code using Cppcheck command line utility
